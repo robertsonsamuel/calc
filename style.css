@@ -1,0 +1,26 @@
+#ansblock{
+    width: 800px;
+    height: 80px;
+    text-align: center;
+    font-size: 50px;;
+}
+
+
+.container{
+  margin: 0 auto;
+  top:0;bottom: 0;right: 0;left: 0;
+
+}
+
+.inputButton{
+    border: 1px solid black;
+    height: 10vh;
+    width: 20vw;
+    font-size: 83px;
+    background-color: orange;
+    color:white;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
