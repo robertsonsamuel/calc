@@ -125,9 +125,6 @@ default:  }
 } //end runOperator
 
 
-function add (argument) {
-  // body...
-}
 
 
 
@@ -144,29 +141,12 @@ function calc() {
 
 
   //setup modify buttons on click events
-  $('#clear').on('click',AC);
-  $('#makeNeg').on('click',AC);
-  $('#percent').on('click',AC);
-  $('#divide').on('click',AC);
- 
-  $('#8').on('click',AC);
-  $('#9').on('click',AC);
-  $('#multiply').on('click',AC);
-  $('#4').on('click',AC);
-  $('#5').on('click',AC);
-  $('#6').on('click',AC);
-  $('#subtract').on('click',AC);
-  $('#1').on('click',AC);
-  $('#2').on('click',AC);
-  $('#3').on('click',AC);
-  $('#add').on('click',AC);
-  $('#0').on('click',AC);
-  $('#dot').on('click',AC);
+
 
   //maybe better
   $('.oper').on('click',runOperator);
    $('.number').on('click',numPressed);
-  
+  $('.clear').on('click',AC);
   
 }
 
@@ -175,10 +155,10 @@ function calc() {
 function AC(){
 
   $('#ansblock').text(0); 
-  num1 =$('#ansblock').text(0); ;
-  ans = 0;
-  $currentValue = 0;
-  return ans;
+  
+  num1=[];
+   $currentValue = 0;
+ 
  //clears the screen 
 }
 
