@@ -97,6 +97,33 @@ function runOperator () {
       }
       break;
 
+      case 'makeNeg':
+      if(operClicked === true){
+        firstNumber = parseFloat($('#ansblock').text())*-1;
+       $('#ansblock').text(firstNumber);
+        numb1 = [];
+        return;
+      }
+      break;
+
+      case 'percent':
+      if(operClicked === true){
+        firstNumber = parseFloat($('#ansblock').text())/100;
+       $('#ansblock').text(firstNumber);
+        numb1 = [];
+        return;
+      }
+      break;
+
+      case 'clear':
+      if(operClicked === true){
+        firstNumber=0;
+       $('#ansblock').text(0);
+        numb1 = [];
+        return;
+      }
+      break;
+
       case 'equals':
       equals();
 
@@ -155,7 +182,6 @@ function equals () {
   case 'divide':
   ans = divide(firstNumber,secondnumber);
    $('#ansblock').empty().append(ans);
-
    firstNumber= parseFloat($('#ansblock').text());
   break;
 
