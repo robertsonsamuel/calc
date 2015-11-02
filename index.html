@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Calculator</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-</head>
-<body>
-  <h1> The MVP Calculator </h1>
-  <div id="ansblock">0</div>
-  <div class="container">
+  <head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  </head>
+  <body>
+    <div class="calc-container">
+      <h1> The MVP Calculator </h1>
+      <div id="ansblock">0</div>
+      <div class="container">
         <div class="inputButton oper" data-id="clear">AC</div>
         <div class="inputButton oper" data-id="makeNeg">+/-</div>
         <div class="inputButton oper" data-id="percent">%</div>
@@ -25,13 +26,12 @@
         <div class="inputButton number" data-id="1">1</div>
         <div class="inputButton number" data-id="2">2</div>
         <div class="inputButton number" data-id="3">3</div>
-        <div class="inputButton oper" data-id="add">+</div>    
+        <div class="inputButton oper" data-id="add">+</div>
         <div class="inputButton number" data-id="0">0</div>
         <div class="inputButton number" data-id=".">.</div>
         <div class="inputButton equals" data-id="equals">=</div>
-
-  </div> <!-- containerEnd -->
-  
-<script src="main3.js"></script>
-</body>
-</html>
+        </div> <!-- containerEnd -->
+      </div>
+      <script src="main3.js"></script>
+    </body>
+  </html>
