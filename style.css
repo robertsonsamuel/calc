@@ -1,11 +1,13 @@
+body{
+    background-color: black;
+}
 #ansblock{
     width: 800px;
     height: 80px;
     text-align: center;
     font-size: 50px;;
+    color:white;
 }
-
-
 .container{
   margin: 0 auto;
   top:0;bottom: 0;right: 0;left: 0;
@@ -23,4 +25,3 @@
     display: inline-block;
     cursor: pointer;
 }
-

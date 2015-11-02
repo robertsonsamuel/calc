@@ -22,6 +22,14 @@
 // dot
 // equals
 
+
+
+
+// write numbers pushed to the screen 
+// caputure numbers on screen to array 
+// when pushing an operator clear the screen only if the array length is  > 1
+// 
+
 $(document).ready(function(){}); //document ready
 
 var num = ''; //var to hold ans
@@ -32,9 +40,6 @@ function numPressed(){
 
  $currentValue = $(this).data('id');
  num1.push($currentValue);
-
- console.log(num1);
- 
  if($currentValue === undefined){
   $currentValue = parseFloat($('#ansblock').text());
  }
@@ -42,6 +47,8 @@ function numPressed(){
  // console.log($currentValue,'currentValue');
   return $currentValue;
 }
+
+
 
 
 
@@ -90,7 +97,9 @@ function runOperator () {
 
     case 'add':
         num1.push('+');
-
+        var num2 = numPressed();
+        console.log(num1);
+        
         
     break;
 
@@ -98,6 +107,7 @@ function runOperator () {
 
     //never ever ever use this
     if(num1[1]== '+'){
+
      var ans = num1[0] + num1[2];
        $('#ansblock').text(ans);
     }
